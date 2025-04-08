@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#prompts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+#prompts-table th, #prompts-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#prompts-table td.prompt {
+    line-height: 200%;
+    text-align: left;
+}
+
+#prompts-table th {
+    background-color: #9a69a3;
+    color: white;
+}
+
+#prompts-table td img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#prompts-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.round-button {
+    width: 50px;
+    height: 50px;
+    font-size: xx-large;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffffcc;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    margin: 5px 0 10px 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.round-button:hover {
+    background-color: #b6adca;
+    transform: scale(1.1);
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image-wrapper img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.image-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('download.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.image-wrapper:hover::after {
+    opacity: 1;
+    cursor: pointer;
+}
+  

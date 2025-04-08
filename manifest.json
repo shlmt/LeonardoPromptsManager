@@ -1,0 +1,29 @@
+{
+  "name": "Leonardo Prompts Manager",
+  "version":"0.1",
+  "manifest_version": 3,
+  "icons":{
+    "128":"icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://app.leonardo.ai/image-generation/*"],
+      "js": ["main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["prompts.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

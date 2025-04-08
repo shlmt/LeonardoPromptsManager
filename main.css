@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+}
+  
+#btn {
+    background-color: #6f4c96;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#btn:hover {
+    transform: scale(1.05);
+}
